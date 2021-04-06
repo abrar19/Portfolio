@@ -1,0 +1,794 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+ * {
+	 box-sizing: border-box;
+	 transition-property: all;
+	 transition-duration: 0.6s;
+	 transition-timing-function: ease;
+	 margin: 0;
+	 padding: 0;
+	 
+}
+ html, body {
+	 box-sizing: border-box;
+	 height: 100vh;
+	 width: 100vw;
+}
+ body {
+	 /* background: #e1332d; */
+	 font-family: 'Roboto', sans-serif;
+	 font-weight: 400;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+	 color: #fff;
+	 font-size: 1.25em;
+	 font-weight: 900;
+	 margin: 0 0 2em;
+}
+ @media (min-width: 450px) {
+	 h1 {
+		 font-size: 1.75em;
+	}
+}
+ @media (min-width: 760px) {
+	 h1 {
+		 font-size: 3.25em;
+	}
+}
+ @media (min-width: 900px) {
+	 h1 {
+		 font-size: 5.25em;
+		 margin: 0 0 1em;
+	}
+}
+ p {
+	 color: #fff;
+	 font-size: 12px;
+}
+ @media (min-width: 600px) {
+	 /* p {
+		 left: 50%;
+		 position: absolute;
+		 transform: translate(-50%, 0);
+		 top: 90%;
+	} */
+}
+ @media (max-height: 500px) {
+	 p {
+		 left: 0;
+		 position: relative;
+		 top: 0;
+		 transform: translate(0, 0);
+	}
+}
+ p a {
+	 background: rgba(255, 255, 255, 0);
+	 border-bottom: 1px solid;
+	 color: #fff;
+	 line-height: 1.4;
+	 padding: 0.25em;
+	 text-decoration: none;
+}
+ p a:hover {
+	 background: rgba(255, 255, 255, 1);
+	 color: #e1332d;
+}
+section.container1 {
+    position: relative;
+    width: calc(100% - 80px);
+    float: right;
+	overflow: hidden;
+}
+.headersection{
+	
+}
+
+.contentsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+/* @media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+ } */
+}
+.contentsection a{
+  	margin: 10px;
+  }
+.maincontent{}
+.maincontent i{}
+.maincontent h1{
+  margin: 0;
+  padding: 0;
+}
+.info{
+  margin: 50px;
+}
+.details{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-size: 1.3em;
+  color: #e5e5e5;
+}
+.spc{
+  color: #cccccc;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.spacing{
+  letter-spacing: 5px;
+}
+.rubber {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+.rubber:hover{
+  color: rgb(229, 255, 0);
+}
+.animate__animated.animate__rubberBand {
+  --animate-duration: 1.5s;
+}
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.aboutsection {
+    background: black;
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+    font-family: 'Dancing Script';
+}
+/* @media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+ }
+} */
+.aboutme{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	position: relative;
+	left: 5%;
+	min-height: 100vh;
+	max-width: 550px;
+	margin-top: 50px;
+}
+
+.aboutme h1{
+	margin: 20px 0px 20px 0px;
+	color: #FF5E5E;
+}
+.para{
+ 
+}
+.para p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3em;
+    text-align: justify;
+    letter-spacing: 2px;
+	line-height: 2em;
+}
+
+/* .skillset .skillbar {
+  font-family: 'Dancing Script', cursive;
+	height:30px;
+  color:#0D0E0E;
+  width:0px;
+	border-radius:8px;
+  text-align:center;
+  text-shadow:0.8px 0.7px #212121;
+	transition:0.4s linear;
+	transition-property:width;
+}
+.skillset .skillbar-container{
+  width:75%;
+  border: 1px solid #212121;
+  background-color:#424242; 
+  border-radius:8px;
+  margin-bottom:2%;
+  margin: 20px;
+
+
+}
+.skillset {
+  position: absolute;
+  right: 20%;
+  top: 112%;
+  overflow: hidden;
+  float: right;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+}
+.skillset ul {
+  list-style-type: none;
+  display:inline;
+  font-size: 1.5em;
+}  */
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.content-wrap {
+	width: 45%;
+	display: fit-content;
+	margin: 0;
+	padding: 0;
+}
+
+.section-about {
+	display: flex;
+	flex-direction: row;
+	flex-basis: 50%;
+	flex-grow: 1;
+	justify-content: space-between;
+	/* padding-top: 90px;
+	padding-bottom: 90px; */
+}
+
+.about-box {
+	width: 45%;
+}
+
+.section-about h4 {
+	margin-bottom: 20px;
+}
+
+.section-about h2 {
+	margin-bottom: 10px;
+}
+
+.about-text {
+	margin-bottom: 20px;
+}
+
+.skills {
+    width: 35%;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
+
+.skill-bar {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.skill-text {
+	margin-bottom: 10px;
+}
+
+.skill-progress {
+	width: 100%;
+	height: 5px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.skill-progress-bar {
+	height: 100%;
+	transition-duration: 1000ms;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+	background: linear-gradient(to right, #FF5E5E 50%, white 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	border-radius: 10px;
+}
+
+.skill-progress-bar.full {
+	background-position: left bottom;
+}
+
+.skill-1 .skill-text:after {
+	content: "HTML";
+}
+
+.skill-1 .skill-number:after {
+	content: "50%";
+}
+
+.skill-1 .skill-progress-bar {
+	width: 50%;
+}
+
+.skill-2 .skill-text:after {
+	content: "CSS";
+}
+
+.skill-2 .skill-number:after {
+	content: "40%";
+}
+
+.skill-2 .skill-progress-bar {
+	width: 40%;
+}
+
+.skill-3 .skill-text:after {
+	content: "JS";
+}
+
+.skill-3 .skill-number:after {
+	content: "30%";
+}
+
+.skill-3 .skill-progress-bar {
+	width: 30%;
+}
+
+.skill-4 .skill-text:after {
+	content: "PHP";
+}
+
+.skill-4 .skill-number:after {
+	content: "60%";
+}
+
+.skill-4 .skill-progress-bar {
+	width: 60%;
+}
+
+.skill-5 .skill-text:after {
+	content: "REACT";
+}
+
+.skill-5 .skill-number:after {
+	content: "40%";
+}
+
+.skill-5 .skill-progress-bar {
+	width: 40%;
+}
+
+
+@import "compass/css3";
+.hobbies{
+	position: absolute;
+	top :76%;
+	left: 11%;
+	min-height: 70px;
+	min-width: 680px;
+}
+.hobbies h1 {
+    font-size: 3.2em;
+    position: relative;
+    top: 38%;
+    left: 75%;
+}
+.guitar{
+	color: #FF5E5E;
+}
+ .equalizer {
+	 position: absolute;
+	 bottom: 16.2499999996vmin;
+	 left: 16.2499999996vmin;
+	 display: block;
+	 width: 5.0000000003vmin;
+	 background-color: white;
+	 height: 2.5000000001vmin;
+	 flex: 1;
+}
+ .equalizer, .equalizer::before, .equalizer::after {
+	 animation: equalize 1.25s steps(25, end) 0s infinite;
+}
+ .equalizer::before, .equalizer::after {
+	 content: '';
+	 position: absolute;
+	 bottom: 0;
+	 left: 6.2500000003vmin;
+	 height: 17.5000000009vmin;
+	 width: 5.0000000003vmin;
+	 background-color: white;
+}
+ .equalizer::before {
+	 animation-name: equalize2;
+}
+ .equalizer::after {
+	 left: 12.5000000006vmin;
+	 animation-name: equalize3;
+	 background-color: white;
+}
+ @keyframes equalize {
+	 0% {
+		 height: 5.0000000003vmin;
+	}
+	 4% {
+		 height: 2.5000000001vmin;
+	}
+	 8% {
+		 height: 5.0000000003vmin;
+	}
+	 12% {
+		 height: 8.7500000004vmin;
+	}
+	 16% {
+		 height: 12.5000000006vmin;
+	}
+	 20% {
+		 height: 16.2499999997vmin;
+	}
+	 24% {
+		 height: 14.9999999965vmin;
+	}
+	 28% {
+		 height: 13.7499999977vmin;
+	}
+	 32% {
+		 height: 13.7499999977vmin;
+	}
+	 36% {
+		 height: 10.0000000005vmin;
+	}
+	 40% {
+		 height: 12.5000000006vmin;
+	}
+	 44% {
+		 height: 12.5000000006vmin;
+	}
+	 48% {
+		 height: 13.7499999977vmin;
+	}
+	 52% {
+		 height: 14.9999999965vmin;
+	}
+	 56% {
+		 height: 16.2499999997vmin;
+	}
+	 60% {
+		 height: 14.9999999965vmin;
+	}
+	 64% {
+		 height: 14.9999999965vmin;
+	}
+	 68% {
+		 height: 13.7499999977vmin;
+	}
+	 72% {
+		 height: 12.5000000006vmin;
+	}
+	 76% {
+		 height: 13.7499999977vmin;
+	}
+	 80% {
+		 height: 14.9999999965vmin;
+	}
+	 84% {
+		 height: 14.9999999965vmin;
+	}
+	 88% {
+		 height: 16.2499999997vmin;
+	}
+	 92% {
+		 height: 12.5000000006vmin;
+	}
+	 96% {
+		 height: 8.7500000004vmin;
+	}
+	 100% {
+		 height: 5.0000000003vmin;
+	}
+}
+ @keyframes equalize2 {
+	 0% {
+		 height: 14.9999999965vmin;
+	}
+	 4% {
+		 height: 16.2499999997vmin;
+	}
+	 8% {
+		 height: 14.9999999965vmin;
+	}
+	 12% {
+		 height: 14.9999999965vmin;
+	}
+	 16% {
+		 height: 13.7499999977vmin;
+	}
+	 20% {
+		 height: 13.7499999977vmin;
+	}
+	 24% {
+		 height: 13.7499999977vmin;
+	}
+	 28% {
+		 height: 14.9999999965vmin;
+	}
+	 32% {
+		 height: 14.9999999965vmin;
+	}
+	 36% {
+		 height: 16.2499999997vmin;
+	}
+	 40% {
+		 height: 16.2499999997vmin;
+	}
+	 44% {
+		 height: 16.2499999997vmin;
+	}
+	 48% {
+		 height: 13.7499999977vmin;
+	}
+	 52% {
+		 height: 10.0000000005vmin;
+	}
+	 56% {
+		 height: 7.5000000014vmin;
+	}
+	 60% {
+		 height: 10.0000000005vmin;
+	}
+	 64% {
+		 height: 12.5000000006vmin;
+	}
+	 68% {
+		 height: 13.7499999977vmin;
+	}
+	 72% {
+		 height: 16.2499999997vmin;
+	}
+	 76% {
+		 height: 14.9999999965vmin;
+	}
+	 80% {
+		 height: 14.9999999965vmin;
+	}
+	 84% {
+		 height: 13.7499999977vmin;
+	}
+	 88% {
+		 height: 13.7499999977vmin;
+	}
+	 92% {
+		 height: 11.2499999973vmin;
+	}
+	 96% {
+		 height: 13.7499999977vmin;
+	}
+	 100% {
+		 height: 14.9999999965vmin;
+	}
+}
+ @keyframes equalize3 {
+	 0% {
+		 height: 11.2499999973vmin;
+	}
+	 4% {
+		 height: 8.7500000004vmin;
+	}
+	 8% {
+		 height: 11.2499999973vmin;
+	}
+	 12% {
+		 height: 13.7499999977vmin;
+	}
+	 16% {
+		 height: 16.2499999997vmin;
+	}
+	 20% {
+		 height: 18.7499999977vmin;
+	}
+	 24% {
+		 height: 17.5000000009vmin;
+	}
+	 28% {
+		 height: 13.7499999977vmin;
+	}
+	 32% {
+		 height: 11.2499999973vmin;
+	}
+	 36% {
+		 height: 10.0000000005vmin;
+	}
+	 40% {
+		 height: 8.7500000004vmin;
+	}
+	 44% {
+		 height: 6.2500000003vmin;
+	}
+	 48% {
+		 height: 10.0000000005vmin;
+	}
+	 52% {
+		 height: 12.5000000006vmin;
+	}
+	 56% {
+		 height: 13.7499999977vmin;
+	}
+	 60% {
+		 height: 16.2499999997vmin;
+	}
+	 64% {
+		 height: 14.9999999965vmin;
+	}
+	 68% {
+		 height: 13.7499999977vmin;
+	}
+	 72% {
+		 height: 13.7499999977vmin;
+	}
+	 76% {
+		 height: 12.5000000006vmin;
+	}
+	 80% {
+		 height: 14.9999999965vmin;
+	}
+	 84% {
+		 height: 16.2499999997vmin;
+	}
+	 88% {
+		 height: 17.5000000009vmin;
+	}
+	 92% {
+		 height: 14.9999999965vmin;
+	}
+	 96% {
+		 height: 12.5000000006vmin;
+	}
+	 100% {
+		 height: 11.2499999973vmin;
+	}
+}
+
+.center-me {
+    position: absolute;
+    top: 90%;
+    left: -4%;
+    margin-top: -25vmin;
+    margin-left: -25vmin;
+    width: 50vmin;
+    height: 50vmin;
+    background-color: transparent;
+}
+ *, ::before, ::after {
+	 -moz-box-sizing: border-box;
+	 box-sizing: border-box;
+}
+
+ /* html, body {
+	 height: 100%;
+} */
+.hobbies2{
+		
+}
+.icon-wrapper {
+    width: 160px;
+    height: 160px;
+    background: #FF5E5E;
+    padding: 2em;
+    margin: 2em auto;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 53%;
+    top: 70%;
+}
+  
+  .sportsman {
+    position: absolute;
+    top: 77%;
+    right: 8%;
+    font-size: 3.2em;
+    width: 429px;
+}
+  
+  .cls-1,
+  .cls-2,
+  .cls-3 {
+	fill: none;
+	stroke: #fff;
+  }
+  
+  .cls-1 {
+	stroke-miterlimit: 22.93;
+	stroke-width: 2px;
+  }
+  
+  .cls-2,
+  .cls-3 {
+	stroke-linecap: round;
+	stroke-linejoin: round;
+  }
+  
+  .cls-2 {
+	stroke-width: 1.5px;
+  }
+  
+  .cls-3 {
+	stroke-width: 2px;
+  }
+  
+  .icon-wrapper #air {
+	stroke-dashoffset: 66;
+	stroke-dasharray: 33;
+	transition: all 2s ease;
+  }
+  
+  .icon-wrapper:hover #air {
+	stroke-dashoffset: 0;
+  }
+  
+  .icon-wrapper #ball {
+	transition: all 1.5s ease;
+	transform: rotate(0);
+	transform-origin: center;
+  }
+  
+  .icon-wrapper:hover #ball {
+	transform: rotate(360deg);
+  }
+
+  .skillsection {
+    min-height: 100vh;
+	background: #e1332d;
+    padding: 20px 50px 0px 70px;
+    
+}
+  .sxpara{
+	  max-width: 550px;
+	  position: absolute;
+  }
+  .title h1{
+	font-family: 'Dancing Script', cursive; 
+	margin: 20px 0px 20px 0px;
+}
+  .spara{
+
+  }
+  .spara p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3em;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 2em;
+}
+
+  #particle-slider {
+    overflow: hidden;
+    height: 100vh;
+    width: 60vw;
+    position: relative;
+    float: right;
+}
+canvas.draw {
+    position: relative;
+    z-index: 0;
+	top:0;
+}
+.portfoliosection {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: black;
+    padding: 50px 20px 20px 20px;
+}
+#map {
+    position: relative;
+    top: 20%;
+    width: 46vw;
+    float: right;
+}
